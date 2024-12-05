@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    kotlin("jvm") version "1.8.21"
 }
 
 group 'com.eopeter.flutter_dtmf'
@@ -28,4 +29,7 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+
+kotlin {
+    jvmToolchain(21) // Or any other supported version
 }
